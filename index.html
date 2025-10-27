@@ -1,0 +1,447 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>EquaLine — Природная вода</title>
+    <meta name="description" content="EquaLine — натуральная вода. Каталог, оплата, компания, контакты." />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+   
+    <div id="preloader" aria-hidden="true">
+      <div class="preloader__inner">
+        <span class="preloader__brand">EquaLine</span>
+        <div class="preloader__bar" role="progressbar" aria-valuemin="0" aria-valuemax="100"></div>
+      </div>
+    </div>
+
+    <div class="main-content">
+
+    <button class="sidebar-toggle" aria-controls="sidebar" aria-expanded="false" aria-label="Открыть меню">
+      <span></span><span></span><span></span>
+    </button>
+
+    <aside id="sidebar" class="sidebar" aria-hidden="true">
+      <div class="sidebar__header">
+        <span class="brand">EquaLine</span>
+        <button class="sidebar__close" aria-label="Закрыть меню">×</button>
+      </div>
+     
+      <nav class="sidebar__nav">
+        <a href="pages/catalog.html">Каталог</a>
+        <a href="pages/payment.html">Оплата</a>
+        <a href="pages/company.html">Компания</a>
+        <a href="pages/contacts.html">Контакты</a>
+      </nav>
+    </aside>
+
+    <div class="auth-links">
+      <button data-open-modal="login">Вход</button>
+      <button data-open-modal="register">Регистрация</button>
+    </div>
+
+    <header class="hero">
+      <video class="hero__video" autoplay muted loop playsinline>
+        <source src="img/IMG_0416.MP4" type="video/mp4" />
+      </video>
+      <div class="hero__overlay"></div>
+      <div class="hero__content">
+        <div class="hero__top">
+          <div class="hero__brand">EquaLine</div>
+        </div>
+        <div class="hero__center">
+          <h1>Живительная сила воды — чистота, которой хочется доверять</h1>
+         
+        </div>
+      </div>
+     
+    </header>
+    <section class="water-products" id="about-water">
+      <div class="container">
+        <div class="products-content">
+          <div class="products-text">
+            <h2>В наличии питьевая вода с бесплатной доставкой</h2>
+            <ul class="products-list">
+              <li>Известная доставка воды по Оренбургу 18,9 литров</li>
+              <li>Питьевая вода собственного производства под брендом «ЭкваЛайн!» </li>
+              <li>Йодис 19 л - питьевая артезианская вода с йодом, который усваивается организмом на 90%.</li>
+              <li>Минеральная вода. Вкусная, мягкая, в меру солёная вода, которая прекрасно утоляет жажду. Благодаря слабой минерализации её можно пить каждый день.</li>
+            </ul>
+            <p class="products-conclusion">Вода - лучший напиток для утоления жажды и поддержания здоровья.</p>
+          </div>
+          <div class="products-image" id="productsImageContainer">
+      
+            <div class="background-image"></div>
+            
+            <img src="img/water.png" alt="Вода" class="water-image" id="waterImage"> 
+          
+            <div class="stone-pieces-container" id="stonePiecesContainer">
+              <img src="stone/1.png" alt="Кусочек 1" class="stone-piece piece-1">
+              <img src="stone/2.png" alt="Кусочек 2" class="stone-piece piece-2">
+              <img src="stone/3.png" alt="Кусочек 3" class="stone-piece piece-3">
+              <img src="stone/4.png" alt="Кусочек 4" class="stone-piece piece-4">
+              <img src="stone/5.png" alt="Кусочек 5" class="stone-piece piece-5">
+              <img src="stone/6.png" alt="Кусочек 6" class="stone-piece piece-6">
+              <img src="stone/7.png" alt="Кусочек 7" class="stone-piece piece-7">
+              <img src="stone/8.png" alt="Кусочек 8" class="stone-piece piece-8">
+              <img src="stone/9.png" alt="Кусочек 9" class="stone-piece piece-9">
+            </div>
+            
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="reviews-new" id="reviews">
+      <div class="container">
+        <div class="reviews-header-new">
+          <h2>Отзывы о нас</h2>
+          <div class="reviews-buttons">
+            <button class="btn-new btn-primary-new" data-open-modal="leave-review">ОСТАВИТЬ ОТЗЫВ</button>
+            <button class="btn-new btn-secondary-new" data-open-modal="all-reviews">ВСЕ ОТЗЫВЫ</button>
+          </div>
+        </div>
+        
+        <div class="reviews-content-new">
+          <div class="reviews-list" id="reviewsList">
+          
+            <div class="review-item">
+              <div class="review-item-header">
+                <div class="review-avatar">МП</div>
+                <div class="review-item-info">
+                  <div class="review-item-date">02 МАЯ 2024</div>
+                  <div class="review-item-name">Матвей Поздеев</div>
+                </div>
+              </div>
+              <div class="review-item-rating">
+                <span class="review-stars">★★★★★</span>
+              </div>
+              <div class="review-item-text">
+                <div class="review-quote">"</div>
+                <p>Очень удобно, что доставляют в выходные дни, так как в будни много работаю. Интервал доставки 3-4 часа, заказываю утром, а привозят в обед. Цену считаю выгодной.</p>
+              </div>
+            </div>
+            
+            <div class="review-item">
+              <div class="review-item-header">
+                <div class="review-avatar">ЕП</div>
+                <div class="review-item-info">
+                  <div class="review-item-date">15 АПРЕЛЯ 2025</div>
+                  <div class="review-item-name">Екатерина Попова</div>
+                </div>
+              </div>
+              <div class="review-item-rating">
+                <span class="review-stars">★★★★★</span>
+              </div>
+              <div class="review-item-text">
+                <div class="review-quote">"</div>
+                <p>После рождения сына перешли на бутилированную питьевую воду. Изучала в интернете, сравнивала цены. Заказали в «Пей Воду для Ля...» и остались довольны качеством.</p>
+              </div>
+            </div>
+            
+            <div class="review-item">
+              <div class="review-item-header">
+                <div class="review-avatar">АИ</div>
+                <div class="review-item-info">
+                  <div class="review-item-date">28 МАРТА 2024</div>
+                  <div class="review-item-name">Александр Иванов</div>
+                </div>
+              </div>
+              <div class="review-item-rating">
+                <span class="review-stars">★★★★★</span>
+              </div>
+              <div class="review-item-text">
+                <div class="review-quote">"</div>
+                <p>Заказываю воду уже полгода. Качество отличное, доставка быстрая. Особенно нравится, что можно заказать онлайн и выбрать удобное время.</p>
+              </div>
+            </div>
+            
+            <div class="review-item">
+              <div class="review-item-header">
+                <div class="review-avatar">МП</div>
+                <div class="review-item-info">
+                  <div class="review-item-date">10 МАРТА 2025</div>
+                  <div class="review-item-name">Мария Петрова</div>
+                </div>
+              </div>
+              <div class="review-item-rating">
+                <span class="review-stars">★★★★★</span>
+              </div>
+              <div class="review-item-text">
+                <div class="review-quote">"</div>
+                <p>Вода очень вкусная и чистая. Заказываем для всей семьи. Служба доставки работает профессионально, всегда привозят вовремя.</p>
+              </div>
+            </div>
+            
+            <div class="review-item">
+              <div class="review-item-header">
+                <div class="review-avatar">ДС</div>
+                <div class="review-item-info">
+                  <div class="review-item-date">22 ФЕВРАЛЯ 2025</div>
+                  <div class="review-item-name">Дмитрий Соколов</div>
+                </div>
+              </div>
+              <div class="review-item-rating">
+                <span class="review-stars">★★★★★</span>
+              </div>
+              <div class="review-item-text">
+                <div class="review-quote">"</div>
+                <p>Отличное соотношение цена-качество. Вода действительно хорошая, пьем всей семьей. Рекомендую всем знакомым.</p>
+              </div>
+            </div>
+            
+            <div class="review-item">
+              <div class="review-item-header">
+                <div class="review-avatar">АК</div>
+                <div class="review-item-info">
+                  <div class="review-item-date">05 ФЕВРАЛЯ 2024</div>
+                  <div class="review-item-name">Анна Козлова</div>
+                </div>
+              </div>
+              <div class="review-item-rating">
+                <span class="review-stars">★★★★★</span>
+              </div>
+              <div class="review-item-text">
+                <div class="review-quote">"</div>
+                <p>Очень довольна сервисом. Вода качественная, доставка быстрая. Особенно удобно, что можно заказать через сайт.</p>
+              </div>
+            </div>
+          </div>
+          
+          <div class="reviews-controls">
+            <button class="control-btn prev-btn-new" id="prevBtnNew">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <polyline points="15,18 9,12 15,6"></polyline>
+              </svg>
+            </button>
+            <div class="page-dots" id="pageDots">
+            </div>
+            <button class="control-btn next-btn-new" id="nextBtnNew">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <polyline points="9,18 15,12 9,6"></polyline>
+              </svg>
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="faq" id="faq">
+      <div class="container">
+        <div class="faq-header">
+          <h2>Вопросы и ответы</h2>
+          <p>Вы спрашиваете – мы отвечаем. Если хотите уточнить ещё что-то, звоните нам по телефону или оставляйте заявку на сайте.</p>
+        </div>
+        <div class="faq-list">
+          <div class="faq-item">
+            <div class="faq-question">
+              <span>Какой состав воды?</span>
+              <button class="faq-toggle">+</button>
+            </div>
+            <div class="faq-answer">
+              <p>Наша вода имеет сбалансированный минеральный состав, включающий кальций, магний, натрий и другие полезные микроэлементы. Полный состав указан на этикетке каждой бутыли.</p>
+            </div>
+          </div>
+          <div class="faq-item">
+            <div class="faq-question">
+              <span>Нужен ли залог за оборотную тару?</span>
+              <button class="faq-toggle">+</button>
+            </div>
+            <div class="faq-answer">
+              <p>Да, за многоразовые бутыли взимается залог, который возвращается при возврате тары. Сумма залога составляет 200 рублей за бутыль 19 литров.</p>
+            </div>
+          </div>
+          <div class="faq-item">
+            <div class="faq-question">
+              <span>Какой минимальный заказ?</span>
+              <button class="faq-toggle">+</button>
+            </div>
+            <div class="faq-answer">
+              <p>Минимальный заказ составляет 1 бутыль воды объемом 19 литров. При заказе от 3 бутылей действует скидка 5%.</p>
+            </div>
+          </div>
+          <div class="faq-item">
+            <div class="faq-question">
+              <span>Какие у вас виды оплаты?</span>
+              <button class="faq-toggle">+</button>
+            </div>
+            <div class="faq-answer">
+              <p>Мы принимаем оплату наличными при доставке, банковскими картами (VISA, MasterCard, МИР), а также безналичным расчетом для юридических лиц.</p>
+            </div>
+          </div>
+          <div class="faq-item">
+            <div class="faq-question">
+              <span>Почему удобнее покупать воду для кулера в многоразовых бутылях?</span>
+              <button class="faq-toggle">+</button>
+            </div>
+            <div class="faq-answer">
+              <p>Многоразовые бутыли экологичнее, экономичнее и удобнее в использовании. Они не занимают много места при хранении и обеспечивают постоянный доступ к чистой воде.</p>
+            </div>
+          </div>
+          <div class="faq-item">
+            <div class="faq-question">
+              <span>Как вы чистите многоразовые бутыли перед доставкой покупателю?</span>
+              <button class="faq-toggle">+</button>
+            </div>
+            <div class="faq-answer">
+              <p>Все многоразовые бутыли проходят многоступенчатую очистку: промывка горячей водой, дезинфекция специальными растворами, ополаскивание чистой водой и сушка в стерильных условиях.</p>
+            </div>
+          </div>
+          <div class="faq-item">
+            <div class="faq-question">
+              <span>Есть ли скидка при покупке большого количества бутылей?</span>
+              <button class="faq-toggle">+</button>
+            </div>
+            <div class="faq-answer">
+              <p>Да, у нас действует система скидок: от 3 бутылей - скидка 5%, от 5 бутылей - скидка 10%, от 10 бутылей - скидка 15%. Также предоставляем корпоративные скидки для постоянных клиентов.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    </div> 
+
+
+    <footer class="site-footer">
+      <div class="container footer-grid">
+        <div class="footer-left">
+          <nav class="footer-nav">
+            <a href="pages/company.html">О компании</a>
+            <a href="#about-water">О воде</a>
+            <a href="pages/company.html#certificates">Сертификаты</a>
+            <a href="#faq">Вопрос-ответ</a>
+            <a href="pages/catalog.html">Услуги</a>
+          </nav>
+          <div class="footer-social">
+            <a href="https://vk.com/kapavoda" aria-label="VK" class="icon-btn">vk</a>
+            <a href="https://vk.com/kapavoda" aria-label="TG" class="icon-btn">✉</a>
+          </div>
+          <div class="copyright">© 2025 EquaLine, Все права защищены</div>
+        </div>
+        <div class="footer-middle">
+          <div class="footer-contact">
+            <div class="phone"><a href="tel:679909">67-99-09</a></div>
+         
+            <div class="email"><a href="mailto:ekvalayn@mail.ru">ekvalayn@mail.ru</a></div>
+            <div class="address">г. Оренбург, пос. им. Куйбышева, ул. Ветеранов Труда, д. 15а</div>
+          </div>
+        </div>
+        <div class="footer-right">
+          <button class="newsletter" data-open-modal="newsletter">Подписаться на рассылку ✈</button>
+          <a href="#" class="policy">Политика конфиденциальности</a>
+          <div class="payments">
+            <span>VISA</span><span>MC</span><span>MIR</span>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+  
+    <button id="toTop" class="to-top" aria-label="Наверх">↑</button>
+
+
+    <div id="modal-login" class="modal" aria-hidden="true" role="dialog" aria-modal="true">
+      <div class="modal__dialog">
+        <button class="modal__close" data-close-modal>×</button>
+        <h3>Вход</h3>
+        <form id="loginForm">
+          <input type="email" name="email" placeholder="Email" required />
+          <input type="password" name="password" placeholder="Пароль" required />
+          <button type="submit" class="btn btn-primary">Войти</button>
+        </form>
+      </div>
+    </div>
+    <div id="modal-register" class="modal" aria-hidden="true" role="dialog" aria-modal="true">
+      <div class="modal__dialog">
+        <button class="modal__close" data-close-modal>×</button>
+        <h3>Регистрация</h3>
+        <form id="registerForm">
+          <input type="text" name="name" placeholder="Имя" required />
+          <input type="email" name="email" placeholder="Email" required />
+          <input type="tel" name="phone" placeholder="Телефон" required />
+          <input type="password" name="password" placeholder="Пароль" required />
+          <button type="submit" class="btn btn-primary">Зарегистрироваться</button>
+        </form>
+      </div>
+    </div>
+    <div id="modal-success" class="modal" aria-hidden="true" role="alertdialog" aria-modal="true">
+      <div class="modal__dialog">
+        <button class="modal__close" data-close-modal>×</button>
+        <h3 id="successTitle">Успешно!</h3>
+        <p id="successText">Операция выполнена.</p>
+        <button class="btn" data-close-modal>Ок</button>
+      </div>
+    </div>
+    <div id="modal-leave-review" class="modal" aria-hidden="true" role="dialog" aria-modal="true">
+      <div class="modal__dialog">
+        <button class="modal__close" data-close-modal>×</button>
+        <h3>Оставить отзыв</h3>
+        <form id="leaveReviewForm">
+          <input type="text" name="name" placeholder="Ваше имя" required />
+          <div class="rating-input">
+            <label>Оценка:</label>
+            <select name="rating" required>
+              <option value="">Выберите оценку</option>
+              <option value="5">5 звезд - Отлично</option>
+              <option value="4">4 звезды - Хорошо</option>
+              <option value="3">3 звезды - Удовлетворительно</option>
+              <option value="2">2 звезды - Плохо</option>
+              <option value="1">1 звезда - Очень плохо</option>
+            </select>
+          </div>
+          <textarea name="text" rows="4" placeholder="Ваш отзыв" required></textarea>
+          <button type="submit" class="btn btn-primary">Отправить отзыв</button>
+        </form>
+      </div>
+    </div>
+    <div id="modal-all-reviews" class="modal" aria-hidden="true" role="dialog" aria-modal="true">
+      <div class="modal__dialog all-reviews-modal">
+        <button class="modal__close" data-close-modal>×</button>
+        <h3>Все отзывы наших клиентов</h3>
+        <div class="all-reviews-content">
+          <div class="reviews-stats">
+            <div class="stat-item">
+              <span class="stat-number" id="totalReviews">0</span>
+              <span class="stat-label">Всего отзывов</span>
+            </div>
+            <div class="stat-item">
+              <span class="stat-number" id="averageRating">0</span>
+              <span class="stat-label">Средняя оценка</span>
+            </div>
+            <div class="stat-item">
+              <span class="stat-number">100%</span>
+              <span class="stat-label">Довольных клиентов</span>
+            </div>
+          </div>
+          <div class="all-reviews-list" id="allReviewsList">
+          
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="modal-newsletter" class="modal" aria-hidden="true" role="dialog" aria-modal="true">
+      <div class="modal__dialog">
+        <button class="modal__close" data-close-modal>×</button>
+        <h3>Подписаться на рассылку</h3>
+        <p>Получайте актуальные новости и специальные предложения</p>
+        <form id="newsletterForm">
+          <input type="email" name="email" placeholder="Ваш email" required />
+          <button type="submit" class="btn btn-primary">Подписаться</button>
+        </form>
+      </div>
+    </div>
+
+    <script src="js/script.js"></script>
+  </body>
+  </html>
+
+
+
+
+
+

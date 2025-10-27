@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Оформление заказа - EquaLine</title>
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../css/checkout.css">
+</head>
+<body>
+ 
+    <header class="checkout-header-simple">
+        <div class="container">
+        </div>
+    </header>
+
+ 
+    <main class="main-content">
+      
+        <section class="checkout-section">
+            <div class="container">
+                <div class="checkout-header">
+                    <h1>Оформление заказа</h1>
+                    <p>Заполните форму для оформления доставки воды</p>
+                </div>
+
+                <div class="checkout-content">
+                  
+                    <div class="order-summary">
+                        <h3>Ваш заказ</h3>
+                        <div class="order-items" id="orderItems">
+                           
+                        </div>
+                        <div class="order-total">
+                            <div class="total-line">
+                                <span>Сумма товаров:</span>
+                                <span id="subtotal">0 ₽</span>
+                            </div>
+                            <div class="total-line">
+                                <span>Доставка:</span>
+                                <span id="delivery">Бесплатно</span>
+                            </div>
+                            <div class="total-line total">
+                                <span>Итого:</span>
+                                <span id="total">0 ₽</span>
+                            </div>
+                        </div>
+                    </div>
+
+                   
+                    <div class="checkout-form-container">
+                        <form class="checkout-form" id="checkoutForm">
+                            <div class="form-section">
+                                <h3>Контактная информация</h3>
+                                <div class="form-group">
+                                    <label for="customerName">Имя *</label>
+                                    <input type="text" id="customerName" name="name" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="customerPhone">Телефон *</label>
+                                    <input type="tel" id="customerPhone" name="phone" required placeholder="+7 (___) ___-__-__">
+                                </div>
+                                <div class="form-group">
+                                    <label for="customerEmail">Email</label>
+                                    <input type="email" id="customerEmail" name="email" placeholder="example@email.com">
+                                </div>
+                            </div>
+
+                            <div class="form-section">
+                                <h3>Адрес доставки</h3>
+                                <div class="form-group">
+                                    <label for="deliveryAddress">Адрес *</label>
+                                    <textarea id="deliveryAddress" name="address" required placeholder="Укажите полный адрес доставки"></textarea>
+                                </div>
+                                <div class="form-row">
+                                    <div class="form-group">
+                                        <label for="deliveryDate">Дата доставки *</label>
+                                        <input type="date" id="deliveryDate" name="deliveryDate" required>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="deliveryTime">Время доставки *</label>
+                                        <select id="deliveryTime" name="deliveryTime" required>
+                                            <option value="">Выберите время</option>
+                                            <option value="09:00-12:00">09:00 - 12:00</option>
+                                            <option value="12:00-15:00">12:00 - 15:00</option>
+                                            <option value="15:00-18:00">15:00 - 18:00</option>
+                                            <option value="18:00-21:00">18:00 - 21:00</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="form-section">
+                                <h3>Дополнительная информация</h3>
+                                <div class="form-group">
+                                    <label for="deliveryNotes">Комментарий к заказу</label>
+                                    <textarea id="deliveryNotes" name="notes" placeholder="Дополнительные пожелания по доставке"></textarea>
+                                </div>
+                                <div class="form-group">
+                                    <label class="checkbox-label">
+                                        <input type="checkbox" id="agreeTerms" name="agreeTerms" required>
+                                        <span class="checkmark"></span>
+                                        Я согласен с <a href="#" target="_blank">условиями доставки</a> и <a href="#" target="_blank">политикой конфиденциальности</a>
+                                    </label>
+                                </div>
+                            </div>
+
+                            <div class="form-section">
+                                <h3>Способ оплаты</h3>
+                                <div class="payment-methods">
+                                    <label class="payment-option">
+                                        <input type="radio" name="paymentMethod" value="cash" checked>
+                                        <span class="payment-icon">💵</span>
+                                        <span class="payment-text">
+                                            <strong>Наличными</strong>
+                                            <small>Оплата при получении</small>
+                                        </span>
+                                    </label>
+                                    <label class="payment-option">
+                                        <input type="radio" name="paymentMethod" value="card">
+                                        <span class="payment-icon">💳</span>
+                                        <span class="payment-text">
+                                            <strong>Банковской картой</strong>
+                                            <small>Онлайн оплата</small>
+                                        </span>
+                                    </label>
+                                </div>
+                            </div>
+
+                            <div class="form-actions">
+                                <button type="button" class="btn btn-secondary" onclick="history.back()">Назад</button>
+                                <button type="submit" class="btn btn-primary">Оформить заказ</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+
+    <footer class="site-footer">
+        <div class="container footer-grid">
+            <div class="footer-left">
+                <nav class="footer-nav">
+                    <a href="#">О компании</a>
+                    <a href="#">О воде</a>
+                    <a href="#">Сертификаты</a>
+                    <a href="#">Бренды</a>
+                    <a href="#">Вопрос-ответ</a>
+                    <a href="#">Новости</a>
+                    <a href="catalog.html">Услуги</a>
+                </nav>
+                <div class="footer-social">
+                    <a href="#" aria-label="VK" class="icon-btn">vk</a>
+                    <a href="#" aria-label="TG" class="icon-btn">✉</a>
+                </div>
+                <div class="copyright">© 2025 EquaLine, Все права защищены</div>
+            </div>
+            <div class="footer-middle">
+                <div class="footer-contact">
+                    <div class="phone"><a href="tel:679909">67-99-09</a></div>
+                    <a class="link" href="#" data-open-modal="callback">Заказать звонок</a>
+                    <div class="email"><a href="mailto:ekvalayn@mail.ru">ekvalayn@mail.ru</a></div>
+                    <div class="address">г. Оренбург, пос. им. Куйбышева, ул. Ветеранов Труда, д. 15а</div>
+                </div>
+            </div>
+            <div class="footer-right">
+                <button class="newsletter" data-open-modal="newsletter">Подписаться на рассылку ✈</button>
+                <a href="#" class="policy">Политика конфиденциальности</a>
+                <div class="payments">
+                    <span>VISA</span><span>MC</span><span>MIR</span>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <!-- Login Modal -->
+    <div id="modal-login" class="modal" aria-hidden="true" role="dialog" aria-modal="true">
+        <div class="modal__dialog">
+            <button class="modal__close" data-close-modal>×</button>
+            <h3>Вход</h3>
+            <form id="loginForm">
+                <input type="email" name="email" placeholder="Email" required />
+                <input type="password" name="password" placeholder="Пароль" required />
+                <button type="submit" class="btn btn-primary">Войти</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Register Modal -->
+    <div id="modal-register" class="modal" aria-hidden="true" role="dialog" aria-modal="true">
+        <div class="modal__dialog">
+            <button class="modal__close" data-close-modal>×</button>
+            <h3>Регистрация</h3>
+            <form id="registerForm">
+                <input type="text" name="name" placeholder="Имя" required />
+                <input type="email" name="email" placeholder="Email" required />
+                <input type="tel" name="phone" placeholder="Телефон" required />
+                <input type="password" name="password" placeholder="Пароль" required />
+                <button type="submit" class="btn btn-primary">Зарегистрироваться</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Success Modal -->
+    <div id="modal-success" class="modal" aria-hidden="true" role="alertdialog" aria-modal="true">
+        <div class="modal__dialog">
+            <button class="modal__close" data-close-modal>×</button>
+            <h3 id="successTitle">Успешно!</h3>
+            <p id="successText">Операция выполнена.</p>
+            <button class="btn" data-close-modal>Ок</button>
+        </div>
+    </div>
+
+    <div id="orderSuccessModal" class="modal" aria-hidden="true" role="dialog" aria-modal="true">
+        <div class="modal__dialog">
+            <button class="modal__close" data-close-modal>×</button>
+            <div class="success-content">
+                <div class="success-icon">✅</div>
+                <h3>Заказ успешно оформлен!</h3>
+                <p>Ваш заказ принят в обработку. Мы свяжемся с вами в ближайшее время для подтверждения деталей доставки.</p>
+                <div class="order-number">
+                    <strong>Номер заказа: <span id="orderNumber"></span></strong>
+                </div>
+                <div class="success-actions">
+                    <button class="btn btn-primary" onclick="window.location.href='../index.html'">На главную</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="../js/script.js"></script>
+    <script src="../js/checkout.js"></script>
+</body>
+</html>

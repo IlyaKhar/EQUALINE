@@ -1,0 +1,176 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>EquaLine — Каталог</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/styles.css" />
+  </head>
+  <body>
+ 
+    <button class="sidebar-toggle" aria-controls="sidebar" aria-expanded="false" aria-label="Открыть меню">
+      <span></span><span></span><span></span>
+    </button>
+
+    <aside id="sidebar" class="sidebar" aria-hidden="true">
+      <div class="sidebar__header">
+        <span class="brand">EquaLine</span>
+        <button class="sidebar__close" aria-label="Закрыть меню">×</button>
+      </div>
+
+      <nav class="sidebar__nav">
+        <a href="../index.html">Главная</a>
+        <a href="catalog.html" class="active">Каталог</a>
+        <a href="payment.html">Оплата</a>
+        <a href="company.html">Компания</a>
+        <a href="contacts.html">Контакты</a>
+      </nav>
+    </aside>
+
+ 
+    <div class="auth-links">
+      <button data-open-modal="login">Вход</button>
+      <button data-open-modal="register">Регистрация</button>
+    </div>
+
+    <div class="main-content">
+      <div class="catalog-page">
+      <div class="container">
+        <div class="catalog-header">
+          <a href="../index.html" class="back-link">← На главную</a>
+          <h1>Каталог продукции</h1>
+          <p>Наша премиальная коллекция природной воды. Поиск: <span id="q"></span></p>
+        </div>
+
+        <div class="catalog-controls">
+          <div class="search-filter">
+            <input type="text" id="productSearch" placeholder="Поиск по товарам..." />
+          </div>
+          <div class="sort-filter">
+            <label for="sortSelect">Сортировка:</label>
+            <select id="sortSelect">
+              <option value="name-asc">По названию (А-Я)</option>
+              <option value="name-desc">По названию (Я-А)</option>
+              <option value="price-asc">По цене (возрастание)</option>
+              <option value="price-desc">По цене (убывание)</option>
+              <option value="volume-asc">По объему (возрастание)</option>
+              <option value="volume-desc">По объему (убывание)</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="products-grid" id="productsGrid">
+    
+        </div>
+      </div>
+    </div>
+
+   
+    <button id="cartButton" class="cart-button" aria-label="Корзина">
+      <span class="cart-icon">🛒</span>
+      <span class="cart-count" id="cartCount">0</span>
+    </button>
+
+   
+    <div id="cartModal" class="cart-modal" aria-hidden="true">
+      <div class="cart-modal__content">
+        <div class="cart-modal__header">
+          <h3>Корзина</h3>
+          <button class="cart-modal__close" aria-label="Закрыть корзину">×</button>
+        </div>
+        <div class="cart-modal__body" id="cartItems">
+          <div class="cart-empty">
+            <p>Корзина пуста</p>
+            <a href="catalog.html" class="btn btn-primary">Перейти к каталогу</a>
+          </div>
+        </div>
+        <div class="cart-modal__footer" id="cartFooter" style="display: none;">
+          <div class="cart-total">
+            <strong>Итого: <span id="cartTotal">0</span> ₽</strong>
+          </div>
+          <button class="btn btn-primary" id="checkoutBtn">Оформить заказ</button>
+        </div>
+      </div>
+    </div>
+
+   
+    <footer class="site-footer">
+      <div class="container footer-grid">
+        <div class="footer-left">
+          <nav class="footer-nav">
+            <a href="company.html">О компании</a>
+            <a href="../index.html#about-water">О воде</a>
+            <a href="company.html#certificates">Сертификаты</a>
+            <a href="../index.html#faq">Вопрос-ответ</a>
+            <a href="catalog.html">Услуги</a>
+          </nav>
+          <div class="footer-social">
+            <a href="https://vk.com/kapavoda" aria-label="VK" class="icon-btn">vk</a>
+            <a href="https://vk.com/kapavoda" aria-label="TG" class="icon-btn">✉</a>
+          </div>
+          <div class="copyright">© 2025 EquaLine, Все права защищены</div>
+        </div>
+        <div class="footer-middle">
+          <div class="footer-contact">
+            <div class="phone"><a href="tel:679909">67-99-09</a></div>
+           
+            <div class="email"><a href="mailto:ekvalayn@mail.ru">ekvalayn@mail.ru</a></div>
+            <div class="address">г. Оренбург, пос. им. Куйбышева, ул. Ветеранов Труда, д. 15а</div>
+          </div>
+        </div>
+        <div class="footer-right">
+       
+          <a href="#" class="policy">Политика конфиденциальности</a>
+          <div class="payments">
+            <span>VISA</span><span>MC</span><span>MIR</span>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <button id="toTop" class="to-top" aria-label="Наверх">↑</button>
+
+    <div id="modal-login" class="modal" aria-hidden="true" role="dialog" aria-modal="true">
+      <div class="modal__dialog">
+        <button class="modal__close" data-close-modal>×</button>
+        <h3>Вход</h3>
+        <form id="loginForm">
+          <input type="email" name="email" placeholder="Email" required />
+          <input type="password" name="password" placeholder="Пароль" required />
+          <button type="submit" class="btn btn-primary">Войти</button>
+        </form>
+      </div>
+    </div>
+    <div id="modal-register" class="modal" aria-hidden="true" role="dialog" aria-modal="true">
+      <div class="modal__dialog">
+        <button class="modal__close" data-close-modal>×</button>
+        <h3>Регистрация</h3>
+        <form id="registerForm">
+          <input type="text" name="name" placeholder="Имя" required />
+          <input type="email" name="email" placeholder="Email" required />
+          <input type="password" name="password" placeholder="Пароль" required />
+          <button type="submit" class="btn btn-primary">Зарегистрироваться</button>
+        </form>
+      </div>
+    </div>
+    <div id="modal-success" class="modal" aria-hidden="true" role="alertdialog" aria-modal="true">
+      <div class="modal__dialog">
+        <button class="modal__close" data-close-modal>×</button>
+        <h3 id="successTitle">Успешно!</h3>
+        <p id="successText">Операция выполнена.</p>
+        <button class="btn" data-close-modal>Ок</button>
+      </div>
+    </div>
+
+    <script src="../js/script.js"></script>
+    <script src="../js/catalog.js"></script>
+  </body>
+  </html>
+
+
+
+
+
